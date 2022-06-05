@@ -7,5 +7,5 @@ Example of command:
 mvn -DuserCount=10 -DtimeDuration=5 gatling:test
 ```
 Parameters that could be changed:
-userCount - to specify the users injected atOnce at the scenarios
-timeDuration - to specify the duration of rampUp in the scenarios
+- userCount - to specify the users injected atOnce at the scenarios
+- timeDuration - to specify the duration of rampUp in the scenarios
