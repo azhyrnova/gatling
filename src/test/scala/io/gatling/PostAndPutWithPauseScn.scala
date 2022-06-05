@@ -16,8 +16,8 @@ class PostAndPutWithPauseScn extends BaseScenario {
   setUp(
     constantConcScn.inject(
     nothingFor(10),
-    atOnceUsers(10),
-    rampUsersPerSec(10).to(20).during(10))
+    atOnceUsers(userCount),
+    rampUsersPerSec(10).to(20).during(timeDuration))
       .protocols(httpProtocol.inferHtmlResources())
   )
 }

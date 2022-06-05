@@ -11,7 +11,7 @@ class PostAndPutWithRampUpScn extends BaseScenario {
 
   setUp (
     rampUpScn.inject (
-      rampUsers(10).during(5),
-      constantUsersPerSec(20).during(15)
+      rampUsers(10).during(timeDuration),
+      constantUsersPerSec(20).during(timeDuration)
     ).protocols(httpProtocol.inferHtmlResources()))
 }

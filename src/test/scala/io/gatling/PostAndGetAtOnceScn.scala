@@ -10,6 +10,6 @@ class PostAndGetAtOnceScn extends BaseScenario {
     .exec(getSatellite())
 
 setUp(
-    atOnceScn.inject(atOnceUsers(500))
+    atOnceScn.inject(atOnceUsers(userCount))
   .protocols(httpProtocol.inferHtmlResources()))
 }
